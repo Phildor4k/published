@@ -1,6 +1,6 @@
 # newbank-starter
 
-This is a complementary starter project for NewBank of Week 10.
+This is a complementary starter project for NewBank of Week 11.
 You may clone the following repository to proceed with lab assignments.
 
 ### Usage
