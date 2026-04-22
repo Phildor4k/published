@@ -34,7 +34,11 @@ def exchange_api(request):
     amount = request.GET.get('amount')
     if not amount:
         return JsonResponse({'error': 'Amount is required'}, status=400)
-    amount = float(amount)
+    amount = None
+    try:
+        amount = float(request.GET.get('amount'))
+    except ValueError:
+        return JsonResponse({'error': 'Invalid amount'}, status=400)
     
     from_currency = Currency.objects.filter(code=from_code).first()
 
