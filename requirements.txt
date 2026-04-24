@@ -3,4 +3,4 @@ Django==4.2.29
 djangorestframework==3.16.1
 sqlparse==0.5.5
 typing_extensions==4.15.0
-gunicorn==21.x.x
+gunicorn==25.3.0
